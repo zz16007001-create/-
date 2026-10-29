@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // المحل يعمل بحسابات مسجّلة فقط (أنت وزوجتك). لتشديدها أكثر استبدل الشرط بـ:
+    //   request.auth != null && request.auth.token.email in ['your@mail.com', 'wife@mail.com']
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

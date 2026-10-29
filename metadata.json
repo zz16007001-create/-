@@ -1,0 +1,6 @@
+{
+  "name": "محلي - إدارة المبيعات والمخزون",
+  "description": "نظام محاسبي وإدارة مخزون ومبيعات ومشتريات وعملاء متكامل باللغة العربية",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
